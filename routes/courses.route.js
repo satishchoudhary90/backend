@@ -9,7 +9,7 @@ CourseRouter.post('/addCourse', addCourse)
 
 CourseRouter.get('/allCourses', allCourses)
 
-CourseRouter.get('/course/:id', findCourse)
+CourseRouter.get('/:id', findCourse)
 
 CourseRouter.delete('/delCourse/:id', delCourse)
 
