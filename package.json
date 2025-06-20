@@ -7,9 +7,9 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "BharatCodes",
   "license": "ISC",
-  "description": "",
+  "description": "as an assignment given by IIT Bombay Application Center",
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
