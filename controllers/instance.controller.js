@@ -22,7 +22,7 @@ export const addInstance = async (req, res) => {
 
     if (!newInstance) throw new Error("Instance not created");
 
-    res.status(200).json(newInstance);
+    res.status(200).json({msg: "Instance Added Successfully",newInstance});
   } catch (error) {
     console.log("Error Occurred in addInstance controller ", error.message);
     res.status(500).json({ msg: error.message });
@@ -44,7 +44,7 @@ export const getCourseByYrSem = async (req, res) => {
       course_id: { $in: courseIds },
     });
 
-    res.status(400).json(courses);
+    res.status(200).json(courses);
   } catch (error) {
     console.log("Error in CourseIntanceIds Controller : ", error.message);
     res.status(500).json({ msg: `${error.message}` });
